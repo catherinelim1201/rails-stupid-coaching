@@ -1,0 +1,18 @@
+<div class="container text-center mt-5 pb-4 bg-success p-2 text-dark bg-opacity-25 border-success-subtle rounded-4" >
+  <h1>Stupid Coaching</h1>
+
+  <h3>Your question: </h3>
+  <%= params[:ask] %>
+
+  <h3>- Coach's answer: </h3>
+  <%= @answer %>
+
+  <%# must include the word path %>
+  <%# <%= link_to "Ask Again", ask_path %>
+
+  <div class="d-grid col-6 mx-auto mt-3 text-white-50">
+  <button class="btn btn-primary" type="button"><%= link_to "Ask Again", ask_path %></button>
+  <%# <button class="btn btn-primary" type="button">Button</button> %>
+  </div>
+
+</div>
